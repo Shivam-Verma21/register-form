@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f9;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.password-toggle {
+  cursor: pointer;
+  color: #007bff;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50;
+  width: 0;
+}
+
+.checklist {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.checklist-item {
+  margin: 5px 0;
+}
+
+.checklist-item.completed {
+  color: #4caf50;
+}
+
+.checklist-item::before {
+  content: "•";
+  color: #666;
+  font-weight: bold;
+  display: inline-block;
+  width: 20px;
+}
+
+.checklist-item.completed::before {
+  color: #4caf50;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
